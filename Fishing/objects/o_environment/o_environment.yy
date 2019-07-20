@@ -1,8 +1,8 @@
 {
-    "id": "ed8fed18-75f5-4e71-98b5-5f0aff298aab",
+    "id": "3a1f6bb5-bce5-400c-902b-7e8232f02944",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_coast_blocker",
+    "name": "o_environment",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "1aa4c3e2-470d-47e3-9688-32e6c3c45916",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
