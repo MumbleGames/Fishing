@@ -1,8 +1,8 @@
 {
-    "id": "2d32e143-8271-41c0-8524-3eb7980e0a97",
+    "id": "318e473d-1262-4513-9044-fb9d614ae336",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "face_coast",
+    "name": "throw_bait",
     "IsCompatibility": false,
     "IsDnD": false
 }

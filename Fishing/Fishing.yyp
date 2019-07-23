@@ -63,10 +63,18 @@
             }
         },
         {
+            "Key": "23764810-d01f-40bb-875d-c8fd4d876d9e",
+            "Value": {
+                "id": "5d0f9104-406b-4fa9-a140-cc0d92656367",
+                "resourcePath": "sprites\\s_player_fishing\\s_player_fishing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2d32e143-8271-41c0-8524-3eb7980e0a97",
             "Value": {
                 "id": "b2c34a4a-ad99-4f43-97c5-09eec872ca0c",
-                "resourcePath": "scripts\\face_coast\\face_coast.yy",
+                "resourcePath": "scripts\\is_facing\\is_facing.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -95,6 +103,14 @@
             }
         },
         {
+            "Key": "318e473d-1262-4513-9044-fb9d614ae336",
+            "Value": {
+                "id": "57165ba9-b2d3-47d9-b287-db52538b6544",
+                "resourcePath": "scripts\\throw_bait\\throw_bait.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "37a09c6e-7810-469e-aefc-462b2d4547c5",
             "Value": {
                 "id": "89b88f46-5ef6-40d3-950b-9609c9e895de",
@@ -115,6 +131,14 @@
             "Value": {
                 "id": "1aeaed52-9ada-4c9a-bdbc-0a17c9843e9f",
                 "resourcePath": "objects\\o_tree\\o_tree.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "53157181-9325-40a7-af71-4ec679e70ff8",
+            "Value": {
+                "id": "e193f3f3-1938-405c-9228-ab7eacff1876",
+                "resourcePath": "objects\\o_fishing_location\\o_fishing_location.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -207,6 +231,14 @@
             }
         },
         {
+            "Key": "abc89fe4-d05d-4747-9b5b-5a0c0927db3c",
+            "Value": {
+                "id": "aeb87dfe-0c9b-4f5f-a791-c9e1fca0142a",
+                "resourcePath": "sprites\\s_bait\\s_bait.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b6ea5019-ff64-4bd1-ae3c-7918f1b3a5a8",
             "Value": {
                 "id": "9047e2fc-c00f-4d19-a19f-8164972e0082",
@@ -235,6 +267,14 @@
             "Value": {
                 "id": "5187cdae-25aa-4b34-a70c-483e8d4f7bab",
                 "resourcePath": "sprites\\s_player_right\\s_player_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c74c41a0-ae64-4bdb-bea7-ae4d35814470",
+            "Value": {
+                "id": "55b2316d-0205-492a-8d91-546caa2cb23f",
+                "resourcePath": "sprites\\s_fishing_location\\s_fishing_location.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -327,6 +367,14 @@
             }
         },
         {
+            "Key": "fab9b151-cb80-4334-9fc2-40c53623796c",
+            "Value": {
+                "id": "f3b38a4a-aced-4a46-a4ac-38946ceb5446",
+                "resourcePath": "objects\\o_bait\\o_bait.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fc45a3a5-8976-4798-a3b3-8303102fd7cd",
             "Value": {
                 "id": "48003cba-fdee-4c6c-a2d2-34ea13ef91ea",
@@ -337,7 +385,8 @@
     ],
     "script_order": [
         "2d32e143-8271-41c0-8524-3eb7980e0a97",
-        "9ffab57e-3fd9-4e25-b38a-afe50ff1f6a5"
+        "9ffab57e-3fd9-4e25-b38a-afe50ff1f6a5",
+        "318e473d-1262-4513-9044-fb9d614ae336"
     ],
     "tutorial": ""
 }
