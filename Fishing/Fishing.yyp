@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "4b376d97-1cac-4e87-b21f-6a843eb059d1",
+            "Value": {
+                "id": "830af384-c1fa-4223-847f-ffcd376bc689",
+                "resourcePath": "scripts\\wait_for_fish\\wait_for_fish.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "53157181-9325-40a7-af71-4ec679e70ff8",
             "Value": {
                 "id": "e193f3f3-1938-405c-9228-ab7eacff1876",
@@ -386,7 +394,8 @@
     "script_order": [
         "2d32e143-8271-41c0-8524-3eb7980e0a97",
         "9ffab57e-3fd9-4e25-b38a-afe50ff1f6a5",
-        "318e473d-1262-4513-9044-fb9d614ae336"
+        "318e473d-1262-4513-9044-fb9d614ae336",
+        "4b376d97-1cac-4e87-b21f-6a843eb059d1"
     ],
     "tutorial": ""
 }

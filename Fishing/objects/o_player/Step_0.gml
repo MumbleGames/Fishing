@@ -20,7 +20,7 @@ switch (state)
 	if (is_facing(o_fishing_location) and fishing_button) 
 	{
 		sprite = sprite_index;
-		state = player.fishing;
+		state = player.rod_out;
 	}
 	break;
 #endregion
@@ -44,18 +44,47 @@ switch (state)
 	if(speed = 0) state = player.idle;
 	break;
 #endregion
-#region Fishing State
-	case player.fishing :	
+#region Rod Out State
+	case player.rod_out :	
 		sprite_index = s_player_fishing;
 		image_index = 0;
-		
-		if(fishing_button)
-		throw_bait();
-		//Leaving Fishing mode
-		if(echap)
+		//Take Rod Back
+			if(echap)
 		{
 			sprite_index = sprite;
 			state = player.idle;	
 		}
+		
+		//Throwing the line
+		if(fishing_button) 
+		{
+			bait = throw_bait(45,6);
+			state = player.throwing
+		}
+		break;
+#endregion
+#region Throwing State
+case player.throwing : 
+
+	// Proceed to waiting phase is bait in water, go back to rod out if not.
+	if (bait.speed == 0)
+	{
+		if(position_meeting(bait.x, bait.y, o_fishing_location)) state = player.waiting;
+		else state = player.rod_out;
+	}	
+	break;
+#endregion
+#region Waiting State
+case player.waiting : 		
+	
+		// Cancel Fishing
+		if(echap)
+		{
+			
+			instance_destroy(bait);
+			sprite_index = sprite;
+			state = player.idle;	
+		}
+break;
 #endregion
 }

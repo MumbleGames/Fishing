@@ -1,6 +1,12 @@
 //@ description throws the bait
+///@arg throwing_time
+///@arg throwing_speed
 
+var throwing_time = argument0;
+var throwing_speed = argument1;
 var bait = instance_create_layer(x,y,"Instances", o_bait);
+bait.fisher_x = x;
+bait.fisher_y = y;
 
 switch(sprite)
 	{
@@ -14,4 +20,6 @@ switch(sprite)
 	else bait.direction = 0;
 	break; 
 	}
-bait.speed = 6;
+bait.speed = throwing_speed;
+alarm[0] = throwing_time;
+return bait;

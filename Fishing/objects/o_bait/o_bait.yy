@@ -4,7 +4,36 @@
     "mvc": "1.0",
     "name": "o_bait",
     "eventList": [
-        
+        {
+            "id": "bfdbbd44-ba0a-4d75-91e6-293f9b6f1350",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "fab9b151-cb80-4334-9fc2-40c53623796c"
+        },
+        {
+            "id": "964aa5a7-c4cd-48ce-b9e1-63d3dadb247e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "fab9b151-cb80-4334-9fc2-40c53623796c"
+        },
+        {
+            "id": "8285bfbd-863f-4c9f-9433-1ebc98f5a763",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "fab9b151-cb80-4334-9fc2-40c53623796c"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -22,7 +51,36 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "257d2bf8-8255-4829-8272-20cdc8a64673",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "fisher_x",
+            "varType": 0
+        },
+        {
+            "id": "f601aa80-4f66-4205-ba74-5a004247ffa9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "fisher_y",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "abc89fe4-d05d-4747-9b5b-5a0c0927db3c",
     "visible": true
