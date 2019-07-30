@@ -1,10 +1,10 @@
 /// @description On verra
 
 #region Controls
-left = keyboard_check(ord("Q")) or (gamepad_axis_value(0,gp_axislh) < -0.5);
-right = keyboard_check(ord("D")) or (gamepad_axis_value(0,gp_axislh) > 0.5);
-up = keyboard_check(ord("Z")) or (gamepad_axis_value(0,gp_axislv) < -0.5);
-down = keyboard_check(ord("S")) or (gamepad_axis_value(0,gp_axislv) > 0.5);
+left = keyboard_check(ord("Q")) or (gamepad_axis_value(0,gp_axislh) < -0.5) or gamepad_button_check(0,gp_padl);
+right = keyboard_check(ord("D")) or (gamepad_axis_value(0,gp_axislh) > 0.5) or gamepad_button_check(0,gp_padr);
+up = keyboard_check(ord("Z")) or (gamepad_axis_value(0,gp_axislv) < -0.5) or gamepad_button_check(0,gp_padu);
+down = keyboard_check(ord("S")) or (gamepad_axis_value(0,gp_axislv) > 0.5) or gamepad_button_check(0,gp_padd);
 fishing_button = keyboard_check_pressed(ord("F")) or gamepad_button_check_pressed(0,gp_face4);
 echap = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(0, gp_face2);
 
@@ -69,14 +69,18 @@ case player.throwing :
 	// Proceed to waiting phase is bait in water, go back to rod out if not.
 	if (bait.speed == 0)
 	{
-		if(position_meeting(bait.x, bait.y, o_fishing_location)) state = player.waiting;
+		if(position_meeting(bait.x, bait.y, o_fishing_location)) 
+		{
+			state = player.waiting;
+			alarm[1] = fishing_time; 
+		}
 		else state = player.rod_out;
 	}	
 	break;
 #endregion
 #region Waiting State
 case player.waiting : 		
-	
+		
 		// Cancel Fishing
 		if(echap)
 		{

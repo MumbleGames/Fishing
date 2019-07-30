@@ -1,18 +1,18 @@
 {
-    "id": "53157181-9325-40a7-af71-4ec679e70ff8",
+    "id": "b6f72ccc-4974-4b3d-8202-e9a7a7644be4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_fishing_location",
+    "name": "o_general_info",
     "eventList": [
         {
-            "id": "219c8233-16be-43ee-9199-3021e6cfb920",
+            "id": "4e6c2a28-6e5c-426f-954a-34a9929eabcb",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "53157181-9325-40a7-af71-4ec679e70ff8"
+            "m_owner": "b6f72ccc-4974-4b3d-8202-e9a7a7644be4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,23 +31,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "a3cf1546-148e-4427-a5bb-4a21e6604e49",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "Water_type",
-            "varType": 4
-        }
-    ],
+    "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": false
+    "visible": true
 }

@@ -53,6 +53,26 @@
             "enumb": 0,
             "eventtype": 2,
             "m_owner": "b9e053f5-2aa1-4ce6-81c0-a591998a268b"
+        },
+        {
+            "id": "d03cc6d0-b0eb-4b2c-8d51-ed00f3299383",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "b9e053f5-2aa1-4ce6-81c0-a591998a268b"
+        },
+        {
+            "id": "8adfe175-028d-45a8-9ce9-4c0a47d8da85",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "b9e053f5-2aa1-4ce6-81c0-a591998a268b"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -84,6 +104,20 @@
             "resourceFilter": 1023,
             "value": "4",
             "varName": "max_speed",
+            "varType": 0
+        },
+        {
+            "id": "bc8f7395-f95e-427b-bc37-29fb279c32e5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "150",
+            "varName": "fishing_time",
             "varType": 0
         }
     ],

@@ -1,23 +1,23 @@
 {
-    "id": "b6f72ccc-4974-4b3d-8202-e9a7a7644be4",
+    "id": "8a461648-16a5-48a1-af09-1b67d0970318",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "player_stats",
+    "name": "o_sea",
     "eventList": [
-        {
-            "id": "f32f0cb7-8b45-415b-9197-5fdbbb59fc69",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
-            "eventtype": 8,
-            "m_owner": "b6f72ccc-4974-4b3d-8202-e9a7a7644be4"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": [
+        {
+            "id": "66b4eb7f-9030-4eba-9bbf-40d5059c7762",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "53157181-9325-40a7-af71-4ec679e70ff8",
+            "propertyId": "a3cf1546-148e-4427-a5bb-4a21e6604e49",
+            "value": "Sea"
+        }
+    ],
+    "parentObjectId": "53157181-9325-40a7-af71-4ec679e70ff8",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

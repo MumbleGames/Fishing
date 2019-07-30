@@ -151,14 +151,6 @@
             }
         },
         {
-            "Key": "4b376d97-1cac-4e87-b21f-6a843eb059d1",
-            "Value": {
-                "id": "830af384-c1fa-4223-847f-ffcd376bc689",
-                "resourcePath": "scripts\\wait_for_fish\\wait_for_fish.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "53157181-9325-40a7-af71-4ec679e70ff8",
             "Value": {
                 "id": "e193f3f3-1938-405c-9228-ab7eacff1876",
@@ -223,6 +215,14 @@
             }
         },
         {
+            "Key": "8a461648-16a5-48a1-af09-1b67d0970318",
+            "Value": {
+                "id": "bfc7dffa-0908-4287-b9e5-1f295baf7ec4",
+                "resourcePath": "objects\\o_sea\\o_sea.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "957c84b9-3e56-4cbc-bddf-2fbfa0e7a38e",
             "Value": {
                 "id": "9ec4388e-763e-4410-a1cd-e48d18e64612",
@@ -274,7 +274,7 @@
             "Key": "b6f72ccc-4974-4b3d-8202-e9a7a7644be4",
             "Value": {
                 "id": "b1d38cc4-74c7-4ace-8dcb-48c4f4e88ce8",
-                "resourcePath": "objects\\player_stats\\player_stats.yy",
+                "resourcePath": "objects\\o_general_info\\o_general_info.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "cc10974b-11c4-43a2-a2b2-047c5f316127",
+            "Value": {
+                "id": "2122c61b-4081-4e9b-a0ad-a4f825e5eecc",
+                "resourcePath": "objects\\o_grand_blue\\o_grand_blue.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "009bfb35-1c1e-4410-aab9-76b7045e8461",
@@ -363,6 +371,14 @@
             "Value": {
                 "id": "1362494e-6f67-4db9-8454-ba21c5c6b348",
                 "resourcePath": "views\\e3105016-2f28-4647-bb07-a39f51c68048.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e6b5b3cd-e91f-485c-ac20-4c24081186b3",
+            "Value": {
+                "id": "330b499e-03fd-4581-9c1d-6468a0dd0f8a",
+                "resourcePath": "views\\e6b5b3cd-e91f-485c-ac20-4c24081186b3.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -435,7 +451,6 @@
         "2d32e143-8271-41c0-8524-3eb7980e0a97",
         "9ffab57e-3fd9-4e25-b38a-afe50ff1f6a5",
         "318e473d-1262-4513-9044-fb9d614ae336",
-        "4b376d97-1cac-4e87-b21f-6a843eb059d1",
         "2bf8c045-00e8-4972-95a4-166019315a7e"
     ],
     "tutorial": ""
