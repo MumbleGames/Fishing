@@ -13,8 +13,8 @@ var y2 = argument4;
 
 var horizontal = abs(x2 - x1);
 var vertical = abs(y2 - y1);
-var nombre_de_lignes = vertical div size;
-var nombre_de_colonnes = horizontal div size;
+var nombre_de_lignes = ceil(vertical / size);
+var nombre_de_colonnes = ceil(horizontal / size);
 
 // Corners
 draw_set_alpha(1);
@@ -25,16 +25,19 @@ draw_sprite_part(argument0, 0, size*2, 0, size, size, x2 - size, y1);
 //bottom left
 draw_sprite_part(argument0,0,0, size*2,size, size, x1, y2 - size);
 //bottom right
-draw_sprite_part(argument0, 0, size*2, size*2, size, size, y2 - size, x2- size);
+draw_sprite_part(argument0, 0, size*2, size*2, size, size, x2 - size, y2- size);
 
 
 // Edges
-for (var i=1; i <nombre_de_lignes - 1; i++)
+for (var i=1; i <nombre_de_lignes - 2; i++)
 {
 	//left edge
 	draw_sprite_part(argument0, 0, 0, size, size, size, x1, y1 + i * size);
 	//right edge
 	draw_sprite_part(argument0, 0, size*2, size, size, size, x2 - size, y1 + i * size);
+}
+for (var i=1; i <nombre_de_colonnes - 2; i++)
+{
 	//top edge
 	draw_sprite_part(argument0, 0, size, 0, size, size, x1 + i * size, y1);
 	//bottom edge
@@ -42,13 +45,13 @@ for (var i=1; i <nombre_de_lignes - 1; i++)
 }
 
 //small gap left/right borders
-var taille_y = (y2 - size) - (y1 + (nombre_de_lignes - 1)*size); 
+var taille_y = (y2 - size) - (y1 + (nombre_de_lignes - 2)*size); 
 var ratio_y = taille_y/size;
-draw_sprite_part_ext(argument0,0 ,0, size,size, size, x1, y2 -size - taille_y, 1, ratio_y, c_white , 1);
+draw_sprite_part_ext(argument0,0 ,0, size,size, size, x1, y2 -size - taille_y, 1, ratio_y, c_white ,1);
 draw_sprite_part_ext(argument0,0 ,size*2, size,size, size, x2 - size, y2 - size - taille_y, 1, ratio_y, c_white , 1);
 
 //small gap top/bottom borders
-var taille_x = (x2 - size) - (x1 + (nombre_de_colonnes - 1)*size); 
+var taille_x = (x2 - size) - (x1 + (nombre_de_colonnes - 2)*size); 
 var ratio_x = taille_x/size;
 draw_sprite_part_ext(argument0,0 ,size, 0,size, size, x2 - size - taille_x , y1, ratio_x, 1, c_white , 1);
 draw_sprite_part_ext(argument0,0 ,size, size*2,size, size, x2 - size - taille_x, y2 - size, ratio_x, 1, c_white , 1);
@@ -56,18 +59,22 @@ draw_sprite_part_ext(argument0,0 ,size, size*2,size, size, x2 - size - taille_x,
 
 // Middle
 
-for (i =1 ; i < nombre_de_lignes - 1; i++)
+for (var i =1 ; i <= nombre_de_lignes - 2; i++)
 {
-	for (j = 1 ; j < nombre_de_colonnes - 1; j++)
+	for (var j = 1 ; j <= nombre_de_colonnes - 2; j++)
 	{
-		draw_sprite_part(argument0, 0, size, size, size, size, x1 + size*j, y1 + i * size);	
+		// generic middle
+		if (j!= nombre_de_colonnes -2 and i!= nombre_de_lignes -2 ) 
+		draw_sprite_part(argument0, 0, size, size, size, size, x1 + size*j, y1 + size*i);	
 		
-		if (j== nombre_de_colonnes - 2)
-		draw_sprite_part_ext(argument0,0 ,size, size,size, size, x1+size*i, y2 -size - taille_y, 1, ratio_y, c_white , 1);
-		if(i == nombre_de_lignes - 2)
-		draw_sprite_part_ext(argument0,0 ,size, size,size, size, x2 - size - taille_x , y1 +j*size, ratio_x, 1, c_white , 1);
+		//right gap
+		if (j == nombre_de_colonnes - 2 and i!= nombre_de_lignes -2)
+		draw_sprite_part_ext(argument0,0 ,size, size,size, size, x1 + size*j, y1 + size*i, ratio_x, 1, c_white , 1);
+		if(i == nombre_de_lignes - 2 and j!= nombre_de_colonnes -2)
+		draw_sprite_part_ext(argument0,0 ,size, size,size, size, x1 +size*j, y2 - size - taille_y, 1, ratio_y, c_white , 1);
 		if ( (j== nombre_de_colonnes - 2) and  (i == nombre_de_lignes - 2) )
-		draw_sprite_part_ext(argument0,0 ,size, size,size, size, x1+size*(i+1) , y1 +(j+1)*size, ratio_x, ratio_y, c_white , 1);
+		draw_sprite_part_ext(argument0,0 ,size, size,size, size, x2 -size - taille_x , y2 - size - taille_y, ratio_x, ratio_y, c_white , 1);
+		
 	}
 	
 }

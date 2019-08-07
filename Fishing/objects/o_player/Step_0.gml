@@ -59,7 +59,7 @@ switch (state)
 		if(fishing_button) 
 		{
 			bait = throw_bait(45,6);
-			state = player.throwing
+			state = player.throwing;
 		}
 		break;
 #endregion
