@@ -13,6 +13,6 @@ choice_tab[i] =ds_list_find_value(o_general_info.fish_spots_db[fishing_location.
 //choose randomly from the fish list
 var tab_length = array_length_1d(choice_tab);
 var fish = choice_tab[irandom(tab_length)-1];
-show_debug_message(fish);
-
+var box = instance_find(o_dialog_box,0);
+box.text = "You've caught a " + ts_colour(make_color_rgb(0,255,0)) + fish + ts_colour(c_white)+ " !";
 

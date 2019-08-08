@@ -136,7 +136,7 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "UI",
+            "name": "Text",
             "id": "5a21e557-42fa-42b2-981c-52e211e173c7",
             "depth": 0,
             "grid_x": 32,

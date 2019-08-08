@@ -4,6 +4,7 @@
 
 #macro Grand_Blue 0
 
+randomize();
 for(var i=0; i<5; i++)
 {
 	var location = ds_list_create();
