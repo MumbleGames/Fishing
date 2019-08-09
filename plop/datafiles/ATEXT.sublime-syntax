@@ -1,0 +1,42 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: ATEXT
+scope: source.text
+variables:
+    tags: '(font|fnt|col|color|halign|hlgn|runline|rline|runl|text|txt|return|link|shadow|underlin|uline|outline|oline|pic|img|spr|picture|sprite|image|style|space|tab|t|sw|symbol-width)'
+    effects: '(rainbow|wave|shake)'
+    itags: '(props|prop|settings)'
+contexts:
+  main:
+    # Strings begin and end with quotes, and use backslashes as an escape
+    # character
+
+    - match: '(?<!/)<'
+      scope: keyword.control
+      push: double_quoted_string
+
+    - match: (\>\>[A-Za-z]+[A-Za-z0-9]+\b|@[A-Za-z]+[A-Za-z0-9]+\b)
+      scope: constant.character
+
+    # Numbers
+    #- match: '\b(-)?[0-9.]+\b'
+    #  scope: constant.numeric
+
+  double_quoted_string:
+    - meta_scope: keyword.control
+    - match: '(\\"|")[^\\"]*(\\"|")'
+      scope: constant.character.escape.example-c
+
+    - match: '(?<=<){{tags}}\b'
+      scope: support.function
+
+    - match: '(?<=<){{effects}}\b'
+      scope: support.function
+
+    - match: '(?<=<){{itags}}\b'
+      scope: entity.name.class
+
+    - match: '>'
+      scope: entity.name.class
+      pop: true

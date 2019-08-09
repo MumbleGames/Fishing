@@ -1,0 +1,76 @@
+{
+	"startpage":{
+		"description": "<props content-font=@f_default link-type=\"scr\" link-color-idle=@c_aqua>ATEX, version <txt|@global.ATEX_current_version>\n\nHello, this is introducing in extension \"ATEX\". I rewritten it, and now it faster, better, stronger. Note: this is beta version<hlgn|@fa_left>\n\n\n   Content:\n      1 - <link?title=\"Introducing in tags\" n=1 src=@scr_sp> \n      2 - <link?title=\"Combinations of tags\"?n=2 src=@scr_sp>		\n      3 - <link?title=\"Effects\"?n=3 src=@scr_sp>	\n      4 - <link?title=\"How to use\"?n=4 src=@scr_sp> 			\n      5 - <link?title=\"First steps\"?n=5 src=@scr_sp> 		\n      6 - <link?title=\"Beginning - end\"?n=6 src=@scr_sp> 		\n      7 - <link?title=\"Draw it\"?n=7 src=@scr_sp>	\n      8 - <link?title=\"Modes\"?n=8 src=@scr_sp>\n      9 - <link title=\"Typewriter\" n=9 src=@scr_sp>\n      10 - <link title=\"Variables\" n=10 src=@scr_sp>\n\n   If you have ideas for new tags/modes or if you find a bug in extension, inaccuracy or omission in the tutorial, write me on <col|@c_green>MrSanyaShanin@yandex.ru<col|@c_orange> or on Discord <col|@c_green>V i s h n y a#1488",
+		"demo": ""
+	},
+	"example_0":{
+		"description": "<props link-color-idle=@c_aqua><fnt|@f_default><hlgn|@fa_center>\r#1: Introducing in tags<hlgn|@fa_left>\n    Here are some tags. Click on the link to see how they look: <link?src=@scr_example_0?title=\"running line,\"> <link?src=@scr_example_0?title=\"colour,\"> <link src=@scr_example_0 title=\"halign,\"> <link src=@scr_example_0?title=\"font,\"> <link src=@scr_example_0?title=\"link,\"> <link src=@scr_example_0?title=\"shadow,\"> <link src=@scr_example_0?title=\"underline,\"?c=@c_aqua> <link src=@scr_example_0?title=\"outline,\"> <link src=@scr_example_0?title=\"picture\">, <link src=@scr_example_0?title=\"props\">, <link src=@scr_example_0?title=\"return\">, <link src=@scr_example_0?title=\"style\">, <link src=@scr_example_0?title=\"space\">, <link src=@scr_example_0?title=\"symbol-width\">, <link src=@scr_example_0 title=\"fShake\">\n [variable=value] and [value] - optional variables and arguments, (variable=value) and (value) - required variables and arguments",
+
+		"running line": "Names: runline, runningline, runl, rline\nThe quick <runline: spd=50 title=\"brown fox jumps\"> over the lazy dog \n/<runline(title=\"text\")[spd=speed][w=width]/>\n   title - text in running line\n   spd - speed of the running line, pixels per second\n   w - width of the running line",
+
+		"colour": "Names: col, color, colour\nThe <col @c_aqua>quick <col @c_green>brown <col @c_white>fox <col @c_orange>jumps over the lazy dog \n/<col[colour]/>\n   colour - colour of a next text. Without arguments tag set color to default",
+
+		"halign": "Names: halign, hlgn\nThe quick<hlgn @fa_center>\n brown <hlgn @fa_right>\nfox jumps<hlgn @fa_left>\nover the lazy dog \n/<hlgn[halign]/>\n   halign - halign of the next lines. Use \\r after tag to enable tag for current line. Without arguments tag set halign to default",
+
+		"font": "Names: fnt, font\nThe quick <fnt @f_big>brown fox jumps<fnt @f_default> over the lazy dog \n/<fnt[font]/>\n   font - font of a next text. Without arguments tag set font to default",
+
+		"return": "Names: text, txt, return \n/<return(value)/>\n   value - value that will draw instead this tag.",
+
+		"link": "Names: link\nThe quick <link title=\"brown fox\" type=\"scr\" src=@scr_message c=@c_aqua> jumps over the lazy dog \n/<link(src=link_or_script_index)[type=\"type\"][cm=colour][cp=colour][c=colour]/>\n   src - url or script index \n   type - \"scr\" - execute script or \"url\" - open url page\n   cm - colour when the mouse is on the link\n   cp - colour when mouse is pressed\n   c - colour of the link",
+
+		"shadow": "Names: shadow\nThe quick <shadow c=@c_dkgray>brown fox</shadow> jumps over the lazy dog \n/<shadow[c=colour][x=x][y=y]/>\n   c - colour of the shadow\n   x - relative coordinate x\n   y - relative coordinate y",
+
+		"underline": "Names: underline, uline\nThe quick <underline c=@c_aqua>brown fox</underline> jumps over the lazy dog\n /<underline[c=colour][h=height][w=width]/>\n   c - colour of the underline\n   h - relative height from bottom of the text\n   w - width of the line",
+
+		"outline": "Names: outline, oline\nThe quick <outline c=@c_aqua>brown fox</outline> jumps over the lazy dog \n/<outline[c=colour][w=width]/>\n   c - colour of the outline\n   w - width of the outline. Recommended value - from 1 to 4",
+
+		"picture": "Names: pic, img, spr, picture, image, sprite\nThe quick brown <pic @s_fox> jumps over the lazy dog<pic @s_money spd=15 fps=15> \n/<pic(sprite)[w=width][h=height][fps=fps][frame=index]/>\n   sprite - index of a sprite to draw\n   w - width of the sprite. -2 - use original width of the sprite\n   h - height of the sprite. -2 - use original height of the sprite\n   fps - frames per second\n   frame - frame index of the sprite to draww",
+
+		"props": "Names: props, prop, settings \n/<props[key=value][key1=value1][...]/>\nSetting default properties for current text. \nAviable properties: \n   back-color, back-alpha, content-color, content-alpha, content-font, content-halign, shadow-x, shadow-y, shadow-color, link-color-idle, link-color-moveon, link-color-press, link-type, symbol-width\nThis tag works only with ATEX_fast functions\nExample: /<props content-color=@c_orange content-alpha=0.5 content-halign=@fa_left link-type=scr/>/<hlgn @fa_center/>/<color @c_aqua/>TITLE/<hlgn/>/<color/>\nTEXT",
+
+		"style": "Names: style, stl, sl, set\nHello <style f=@f_big c=@c_red a=230>FRIEND<style f=@f_default c=@c_orange a=255 sw=13> distance<sw>. lol\n/<style[f=font][c=color][a=alpha(0-255)][h=halign]/>\n   f/font - new font\n   c/col/color - new color\n   a/alpha - set alpha from 0 to 255\n   h/halign - set halign for new line(use \\r for set this chane for current line)\nWith this tag you can change one or more settings in one tag instead writing several tags",
+
+		"space": "Names: space, tab, t\nHello<tab 30>world,<tab 3>it's me,<space 40>SPACE\n/<space [width]/>\n   width - width in pixels of the space or text. Default - width of four spaces",
+
+		"symbol-width": "Names: symbol-width, sw \nsometext <sw 1>sometext<sw 10> sometext<sw 15> sometext<sw 20> sometext<sw>\n/<sw [inter-character distance]/>\n   inter-character distance - width between left sides of the characters. Default - \"-1\"(standart distance)",
+	
+		"fShake": "Names: fshake, fShake, tshake, tShake \nsimple <col @c_green> fast <fshake text=\"shake\" s=1.5> <fshake text=\"SHAKE\" s=2.5> <fshake t=\"and a big shake\" s=4>. <col>\n/<fShake [t=\"text\"] [s=strong in pixels]>\n Fast but incompatible with other tags (except transparency, color, and font)"
+	},
+	"example_1":{
+		"description": "<hlgn @fa_center><fnt @f_default>\r#2: Combinations of tags <hlgn|@fa_left>\n    You can combine tags as you want",
+		"demo": "<fnt|@f_default><hlgn|@fa_center>\r<shadow?c=@c_red>ATEX - very <outline?c=@c_yellow>stable</outline> extension.</shadow><shadow?c=@c_ltgray?x=1?y=1> Errors in tags <shadow?c=@c_orange>in source</shadow> text</shadow> will not shut down the game. <underline?c=@c_orange>If your game crashes due to my extension, write me on mail - <link?src=@scr_example_1_copy?title=\"MrSanyaShanin@yandex.ru\"?type=\"scr\"?c=@c_aqua>.</underline><underline?c=@c_red> Press to copy"
+	},
+	"example_2":{
+		"description": "<hlgn|@fa_center><fnt|@f_default>\r#3: Effects<hlgn|@fa_left>\n    You can enable effects for text. But they can spend a small amount of fps. Effects don't work using ATEX_fast_... functions in this version",
+		"demo": "<wave?h=2>wave</wave>, <shake?h=1>shake</shake> and <rainbow>rainbow</rainbow>\n<wave><shake><rainbow>wave_shake_rainbow"
+	},
+	"example_3":{
+		"description": "<hlgn|@fa_center><fnt|@f_default>\r#4: How to use<hlgn|@fa_left>\nTo draw BEAUTIFUL text you should to use tags. Here are some examples of using tags:",
+		"demo": "  Simple tag: /<(code_name_of_tag)[variable=value][argument_value]/>.\n  Some tags need arguments and variables, they must been separated by symbol \",\", \";\", \"?\", \"|\" or by space. You can skip some arguments and variables, and they will take default value. \nExample of using arguments: /<col 0/> - set colour to 0(black). \nExample of using variables: /<runline?title=\"running line\"/>.\n  Different tags need different types of variables: integers or string. \nExample of integer: /<shake h=2/>. \nExample of string: /<runline: title=\"string\"/>. \n  But sometimes you need to use variables or script output in tags. It possible, just use symbol \"@\".\n  Examples of local variable: /<runline: title=@MyText/> - returns text in local variable MyText, \n/<runline: title=@global.runline_text/> - returns text in global variable, \n/<runline: title=@obj_data.text/> - returns text in variable \"text\" of object \"obj_data\", \n/<col @c_blue/> - set colour to blue\nExample of using scripts: /<pic @scr_get_pic.@exe/> - execute script \"scr_get_pic\" and insert picture from script's return"
+	},
+	"example_4":{
+		"description": "<fnt|@f_default><hlgn|@fa_center>\r#5: First steps<hlgn|@fa_left>\n    The magic begins now: try to write: \"Hello, /<runline: title=\"world\"/>. /<pic: @s_fox/> - this is /<col @c_red/>FOX\". Experiment!",
+		"demo": ""
+	},
+	"example_5":{
+		"description": "<fnt|@f_default><hlgn|@fa_center>\r#6: Beginning - end<hlgn|@fa_left>\n    Some tags(underline, shadow, wave, shake, rainbow) have a beginning and an end. Beginning: /<tag/>, end: /</tag/>. For example: /<shadow c=@c_red/>text/</shadow/> - <shadow c=@c_red>text</shadow>.",
+		"demo": ""
+	},
+	"example_6":{
+		"description": "<fnt|@f_default><hlgn|@fa_center>\r#7: Draw it<hlgn|@fa_left>\n    special functions are used to draw text with tags: ATEX_draw, ATEX_draw_content, ATEX_fast_draw. ATEX_draw - slow, but fast. ATEX_fast_draw - very fast, but a bit harder.\n    1) Slow and simple:\n<pic|@s_example_ss?w=-2?h=-2>\n    2) Middle:\n<pic|@s_example_md?w=-2?h=-2>\n    3) This is fast function, try to use it always, especially for large texts:\n<pic|@s_example_fs?w=-2?h=-2>",
+		"demo": ""
+	},
+	"example_7":{
+		"description": "<fnt|@f_default><hlgn|@fa_center>\r#8: Modes<hlgn|@fa_left>\n    ATEX support mods. Functions:\n\n<col @c_green>ATEX_mode_enable(mod)<col @c_orange> - enable current mod \n<col @c_green>ATEX_mode_disable(mod)<col @c_orange> - disable current mod \n\n    Supported modes: \n\n<col @c_green>ATEX.notags<col|@c_orange> - this mode makes drawing faster, but tags will not work \n<col|@c_green>ATEX.gui<col|@c_orange> - enable this mod when you draw text in GUI event \n<col|@c_green>ATEX.alignment<col|@c_orange> - enable alignment(beta) \n<col|@c_green>ATEX.debug<col|@c_orange> - enable debug mode \n<col|@c_green>ATEX.cutwords<col|@c_orange> - enable cut words",
+		"demo": "" 
+	},
+	"example_8":{
+		"description": "<props content-font=@f_default content-halign=@fa_left content-color=@c_orange><hlgn @fa_center>\r#9: Typewriter<hlgn>\n\n    ATEX_fast functions also support drawing of a part of the text. Just use function\n<col @c_aqua>       ATEX_fast_set_symbol_drawing<col> for set number of drawing symbols\nAnd\n<col @c_aqua>       ATEX_fast_get_symbol_number<col> for getting number of symbols in text(some tags as pictures or running line count as one symbol)",
+		"writer": "Hello, i am TEXTTAETAETAFDGRMSRJGNMSIRHGMadfa <col @c_red> different colors <col @c_orange><font @f_big>different fonts<font @f_default> and other tags! This is so simple! atae5 etb etb aetb aeb sarb aetbasf arb aetb aefbv dbs eth aer bz4dfb atb zdfb zdtb hl2 sucks g35g s gaetb setb srgbsdgb est bet btb3 t b3tb"
+	},
+	"example_9":{
+		"description": "<props content-font=@f_default content-halign=left content-color=@c_orange><halign @fa_center>\r#10: Variables<hlgn>\n\n    If you want to add interactive parts in your text, you can create variables and cell them using ${variable_name} in text\n       <col @c_aqua>ATEX_variable_set( variable_name, value )<col> - add variable\n       <col @c_aqua>ATEX_variable_get( variable_name )<col> - returns value of variable\n\nATEX_fast functions are not updated when variables is updated. You can fix this by adding listener in create event(or anywhere else):\n<col @c_aqua>       ATEX_fast_listener_variable_add( id, variable_name )<col>\nYou can turn off all variables using <col @c_aqua>ATEX_mode_enable( ATEX.nomacros )",
+		"demo": "<props content-font=@f_default>You name: ${name}\n<link title=\"Change name\" c=@c_aqua type=scr src=@scr_change_variable>\nTime: ${time}"
+	}
+}
+

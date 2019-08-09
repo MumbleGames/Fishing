@@ -1,1 +1,2 @@
-ts_init()
+ts_init();
+count = 0;

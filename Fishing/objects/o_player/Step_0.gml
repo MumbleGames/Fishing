@@ -86,8 +86,10 @@ case player.waiting :
 		{
 			
 			instance_destroy(bait);
-			sprite_index = sprite;
-			state = player.idle;	
+			sprite_index = s_player_fishing;
+			state = player.rod_out;	
+			var notice_box_there = instance_exists(o_dialog_box);
+			if(notice_box_there) instance_destroy(instance_find(o_dialog_box,0));
 		}
 break;
 #endregion

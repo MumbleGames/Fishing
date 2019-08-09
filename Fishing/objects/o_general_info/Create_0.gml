@@ -1,3 +1,14 @@
+//Inventory system
+
+global.PlayerInventoryWidth = 6;
+global.PlayerInventory = ds_grid_create(global.PlayerInventoryWidth, 1);
+
+fish_category_number = 3;
+global.fish_number = 3;
+global.Fish_DB = ds_grid_create(fish_category_number, global.fish_number);
+Fill_Fish_DB();
+
+// Fish DataBase
 #macro Sea 0
 #macro River 1
 #macro Lake 2

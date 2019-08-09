@@ -1,0 +1,1 @@
+return power(2, ++global.ATEX_modes_count)
