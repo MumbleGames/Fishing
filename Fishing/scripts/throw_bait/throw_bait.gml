@@ -4,7 +4,7 @@
 
 var throwing_time = argument0;
 var throwing_speed = argument1;
-var bait = instance_create_layer(x,y,"Instances", o_bait);
+var bait = instance_create_layer(x,bbox_bottom,"Instances", o_bait);
 bait.fisher_x = x;
 bait.fisher_y = y;
 

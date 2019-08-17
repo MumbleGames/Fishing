@@ -1,1 +1,0 @@
-ATEX_variable_set("name", get_string("Input new value of the variable", ATEX_variable_get("name")))

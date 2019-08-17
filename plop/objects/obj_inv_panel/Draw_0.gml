@@ -1,0 +1,2 @@
+/// @desc disable draw event
+

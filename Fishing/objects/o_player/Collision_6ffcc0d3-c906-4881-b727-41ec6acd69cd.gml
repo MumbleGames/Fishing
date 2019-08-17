@@ -15,3 +15,4 @@ if ( (bbox_bottom >= other.bbox_bottom) and other.layer==top_layer_id)
 other.layer = bottom_layer_id;
 
 block_movement();
+

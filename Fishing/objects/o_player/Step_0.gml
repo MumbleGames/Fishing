@@ -58,7 +58,7 @@ switch (state)
 		//Throwing the line
 		if(fishing_button) 
 		{
-			bait = throw_bait(45,6);
+			bait = throw_bait(15,4);
 			state = player.throwing;
 		}
 		break;
@@ -66,15 +66,20 @@ switch (state)
 #region Throwing State
 case player.throwing : 
 
-	// Proceed to waiting phase is bait in water, go back to rod out if not.
+	// Proceed to waiting phase if bait in water, go back to rod out if not.
 	if (bait.speed == 0)
-	{
+	{ 
 		if(position_meeting(bait.x, bait.y, o_fishing_location)) 
 		{
+			
 			state = player.waiting;
 			alarm[1] = fishing_time; 
 		}
-		else state = player.rod_out;
+		else 
+		{
+			state = player.rod_out;
+			instance_destroy(bait);
+		}
 	}	
 	break;
 #endregion

@@ -4,5 +4,5 @@ if (instance_exists(o_bait))
 {
 draw_set_color(c_white);
 var pipi = instance_find(o_player,0);
-draw_line_width(pipi.x , pipi.y, x, y, 1);
+draw_line_width(pipi.x , pipi.bbox_bottom, x, y, 1);
 }

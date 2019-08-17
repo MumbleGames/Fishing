@@ -1,0 +1,6 @@
+key,stack_size,image_index,sprite_index,type,category,name
+string,real,real,asset,string,string,string
+food_carrot,64,0,spr_ex_item_food,food,vegetable,Carrot
+food_bread,64,1,spr_ex_item_food,food,bread,Bread loaf
+food_cheese,64,2,spr_ex_item_food,food,cheese,Cheddar
+food_fish,64,3,spr_ex_item_food,food,fish,Salmon

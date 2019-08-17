@@ -92,7 +92,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "4",
+            "value": "2",
             "varName": "max_speed",
             "varType": 0
         },
@@ -112,6 +112,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "c488f9e8-d98a-4318-95d8-0906c02012af",
+    "spriteId": "3c9d7059-b4ea-4b8d-a749-6e730327c7d2",
     "visible": true
 }

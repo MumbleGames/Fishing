@@ -1,0 +1,5 @@
+key,stack_size,image_index,sprite_index,type,category,name,description
+string,real,real,asset,string,string,string,string
+"fish_moat_carp,99,0;s_moat_carp,fish,sea_fish,Moat Carp,This freshwater fish is found in lakes and marshes all over Vana'diel."
+"fish_rainbow_trout,99,0;s_rainbow_trout,fish,sea_fish,Rainbow Trout,Found in the crystal-clear rivers and lakes of Mor Dhona and Coerthas, this fish's scales reflect all seven colors of the rainbow, making it difficult to locate in the water."
+"fish_sunfish,99,0;s_sunfish,fish,sea_fish,Sunfish,A common river fish."

@@ -1,0 +1,5 @@
+key,stack_size,image_index,sprite_index,type,category,name
+string,real,real,asset,string,string,string
+potion_health,64,0,spr_ex_item_potions,potion,healing,Health potion
+potion_mana,64,1,spr_ex_item_potions,potion,healing,Mana potion
+potion_stamina,64,2,spr_ex_item_potions,potion,healing,Stamina potion

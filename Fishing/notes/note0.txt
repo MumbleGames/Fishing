@@ -2,3 +2,6 @@ pour l'extension ATEX :
 
 https://marketplace.yoyogames.com/assets/6533/atex
 
+pour l'extension exINV :
+
+https://marketplace.yoyogames.com/assets/4475/exinv-inventory-system
