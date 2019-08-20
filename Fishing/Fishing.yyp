@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "30403829-c9e2-4b74-99ba-52f746f80649",
+            "Value": {
+                "id": "a96c8f98-696c-4e7c-b8af-111023e6345d",
+                "resourcePath": "sprites\\s_player_fishing_right\\s_player_fishing_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "318e473d-1262-4513-9044-fb9d614ae336",
             "Value": {
                 "id": "57165ba9-b2d3-47d9-b287-db52538b6544",
@@ -1071,14 +1079,6 @@
             }
         },
         {
-            "Key": "8f6551c8-bc0b-4ed5-b12a-a39158f2088f",
-            "Value": {
-                "id": "d85a9a55-8c57-4085-8d12-f68d3d0e4e06",
-                "resourcePath": "sprites\\s_player_collision\\s_player_collision.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8ff4a908-2b3c-4946-9151-e865296adc6c",
             "Value": {
                 "id": "c06d6e72-ec57-4e8a-a736-3f34ca00b90b",
@@ -1511,14 +1511,6 @@
             }
         },
         {
-            "Key": "c08ec748-fb28-4d2b-9919-61e08ba1bae7",
-            "Value": {
-                "id": "31bb856a-4bbf-46ad-95f1-529f6c7eebe2",
-                "resourcePath": "sprites\\s_house\\s_house.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c4c57590-b719-434b-986d-9819e606eded",
             "Value": {
                 "id": "50e72c6d-67b0-435f-84ad-f2fe580de676",
@@ -1570,7 +1562,7 @@
             "Key": "c94df71f-a20a-45e8-a6b6-c3e6b9acd1aa",
             "Value": {
                 "id": "cec50c76-cc51-4ac9-9fa0-fa6e0ee3ab8c",
-                "resourcePath": "sprites\\s_house_collision\\s_house_collision.yy",
+                "resourcePath": "sprites\\s_house\\s_house.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1596,6 +1588,14 @@
                 "id": "2122c61b-4081-4e9b-a0ad-a4f825e5eecc",
                 "resourcePath": "objects\\o_grand_blue\\o_grand_blue.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cc80ecdc-aa37-4ce8-8bf9-a96e24631eef",
+            "Value": {
+                "id": "eb0415d2-f5a2-4ee5-b8ef-e4cde7a30696",
+                "resourcePath": "sprites\\s_player_fishing_up\\s_player_fishing_up.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

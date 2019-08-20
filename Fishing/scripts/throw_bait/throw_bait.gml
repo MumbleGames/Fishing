@@ -4,7 +4,16 @@
 
 var throwing_time = argument0;
 var throwing_speed = argument1;
-var bait = instance_create_layer(x,bbox_bottom,"Instances", o_bait);
+if(sprite_index == s_player_fishing)
+var bait = instance_create_layer(x-2,bbox_bottom,"Instances", o_bait);
+
+if(sprite_index == s_player_fishing_right)
+var bait = instance_create_layer(x - sprite_xoffset*image_xscale + sprite_height*(image_xscale +1)/2 , y-14 ,"Instances", o_bait);
+
+if(sprite_index == s_player_fishing_up)
+var bait = instance_create_layer(x + 1 , y - sprite_yoffset ,"Instances", o_bait);
+
+
 bait.fisher_x = x;
 bait.fisher_y = y;
 

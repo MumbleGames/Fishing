@@ -1,5 +1,6 @@
 /// @description On verra
 
+
 #region Controls
 left = keyboard_check(ord("Q")) or (gamepad_axis_value(0,gp_axislh) < -0.5) or gamepad_button_check(0,gp_padl);
 right = keyboard_check(ord("D")) or (gamepad_axis_value(0,gp_axislh) > 0.5) or gamepad_button_check(0,gp_padr);
@@ -40,17 +41,29 @@ switch (state)
 	if(up) sprite_index = s_player_up;
 	//Activating sprite and changing state
 	image_speed = 1;
-
-	if(speed = 0) state = player.idle;
+	
+	if(speed == 0) state = player.idle;
 	break;
 #endregion
 #region Rod Out State
 	case player.rod_out :	
-		sprite_index = s_player_fishing;
+		
+		switch(sprite)
+		{
+			case s_player_down : sprite_index = s_player_fishing;
+			break;
+			case s_player_right : 
+			var sens = image_xscale;
+			sprite_index = s_player_fishing_right;
+			image_xscale = sens;
+			break;
+			case s_player_up : sprite_index = s_player_fishing_up;
+			break;
+		}
 		image_index = 0;
 		//Take Rod Back
 			if(echap)
-		{
+		{ 
 			sprite_index = sprite;
 			state = player.idle;	
 		}
@@ -76,9 +89,15 @@ case player.throwing :
 			alarm[1] = fishing_time; 
 		}
 		else 
-		{
-			state = player.rod_out;
+		{ 			
+			if(echap)
+			{ 
+			sprite_index = sprite;
+			state = player.rod_out;	
 			instance_destroy(bait);
+			instance_destroy(o_dialog_box);
+			}
+				
 		}
 	}	
 	break;
@@ -99,3 +118,5 @@ case player.waiting :
 break;
 #endregion
 }
+
+depth = -y;
