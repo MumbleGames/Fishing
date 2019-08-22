@@ -1,7 +1,7 @@
 if (state != player.waiting) return 0;
 
 var fishing_location = instance_position(bait.x, bait.y, o_fishing_location);
-show_debug_message("peche");
+
 // get the list of fish in that body of water from the database
 var choice_tab = undefined;
 var fish_number = ds_list_size(o_general_info.fish_spots_db[fishing_location.Water_type, fishing_location.Name]);

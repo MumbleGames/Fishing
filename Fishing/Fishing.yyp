@@ -247,14 +247,6 @@
             }
         },
         {
-            "Key": "1c098513-f03b-446f-8880-63424003e5c9",
-            "Value": {
-                "id": "5802d662-2f54-4c2e-a014-c5206be8672e",
-                "resourcePath": "datafiles_yy\\ex\\potions.csv.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "1cebcec0-33d9-4f47-8dcf-ceff9b6fea85",
             "Value": {
                 "id": "596ab6a2-696b-443e-856c-b1e08455b543",
@@ -324,14 +316,6 @@
                 "id": "27d6c181-8003-49eb-aeb8-6a1d4fed0789",
                 "resourcePath": "scripts\\text_format\\text_format.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "28a4bdd8-d348-415b-9cb8-a8aeb99db58f",
-            "Value": {
-                "id": "13dd6d90-0b9b-4cab-837c-ce98cb35df4b",
-                "resourcePath": "views\\28a4bdd8-d348-415b-9cb8-a8aeb99db58f.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -623,27 +607,11 @@
             }
         },
         {
-            "Key": "4ddfe38a-8139-4fd4-a740-a61b385ee7eb",
-            "Value": {
-                "id": "e4938a68-7531-4fa4-b67e-e6e155361eb5",
-                "resourcePath": "scripts\\ex_craft_init\\ex_craft_init.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "4e207b5f-cccd-4811-8102-8750801e5f4d",
             "Value": {
                 "id": "1e4f50bd-bde9-4a43-97e9-0e91d7daa9cc",
                 "resourcePath": "scripts\\ex_inv_destroy\\ex_inv_destroy.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "4e80aed6-ed94-4b2a-b0ff-4facf5cba3ef",
-            "Value": {
-                "id": "11509bc2-fada-44f3-8e67-6e87020b9579",
-                "resourcePath": "objects\\obj_inv_controller\\obj_inv_controller.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -707,14 +675,6 @@
             "Value": {
                 "id": "ad3ccc5e-2b28-420c-99f0-6d9b2041768c",
                 "resourcePath": "scripts\\_ex_fn_inv_init\\_ex_fn_inv_init.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "56fc5171-f110-4eac-b237-55fabe21ec46",
-            "Value": {
-                "id": "5e3c2358-c70c-4ec7-9d07-a0be0352abcd",
-                "resourcePath": "scripts\\ex_craft_find_recipe\\ex_craft_find_recipe.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -804,14 +764,6 @@
                 "id": "e82e848e-d044-4f09-9d7e-42bb8aaa0808",
                 "resourcePath": "sprites\\spr_ex_item_armor\\spr_ex_item_armor.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "65a6ac9e-817a-49eb-8536-3b11e02662e8",
-            "Value": {
-                "id": "11e11df7-53bb-4bb4-a0ea-43d7b7809266",
-                "resourcePath": "datafiles_yy\\ex\\foods.csv.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -959,14 +911,6 @@
             }
         },
         {
-            "Key": "7e4a25c6-4f21-45a9-b086-d3e751a63382",
-            "Value": {
-                "id": "ea22c715-4610-4b68-b67b-ddf90b4ed108",
-                "resourcePath": "objects\\obj_game_controller\\obj_game_controller.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7edc651b-acb8-4ca7-8582-50698ed785ab",
             "Value": {
                 "id": "42424f18-e511-4871-8f66-1d325bb8bd6f",
@@ -1059,14 +1003,6 @@
             "Value": {
                 "id": "7127f6fe-c1cf-4381-b7b0-2627cf9c4325",
                 "resourcePath": "views\\8bb0a211-f1fd-4d12-8daa-886d8386d1ca.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "8bf5c523-2638-42f4-9b05-f01e5e94f332",
-            "Value": {
-                "id": "2179e9b5-29c4-4005-a213-b9633633a61b",
-                "resourcePath": "views\\8bf5c523-2638-42f4-9b05-f01e5e94f332.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1204,6 +1140,14 @@
                 "id": "470ef8a8-3798-46c4-b609-7e8cc5cd08f0",
                 "resourcePath": "scripts\\ex_inv_create\\ex_inv_create.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9c6b1917-e7a5-41ae-8b7a-ec902a9e6835",
+            "Value": {
+                "id": "52d206f0-df0c-4490-8b95-594fafc40126",
+                "resourcePath": "sprites\\s_power_bar\\s_power_bar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1367,14 +1311,6 @@
             }
         },
         {
-            "Key": "af592ec8-21f3-4eee-accb-1eb02ccb7990",
-            "Value": {
-                "id": "2494f412-240e-448f-ae3f-418c24d76b62",
-                "resourcePath": "scripts\\ex_craft_update\\ex_craft_update.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "af709584-86fa-4873-aa02-2558644a9382",
             "Value": {
                 "id": "e8ccf1fe-db61-4385-b02d-6468c798b39c",
@@ -1479,22 +1415,6 @@
             }
         },
         {
-            "Key": "baeefc15-5eea-4fc7-ba87-8aed88bebdbf",
-            "Value": {
-                "id": "ebe805b9-db9c-4003-ab8b-1b79a9b5845c",
-                "resourcePath": "scripts\\ex_craft_add_recipe\\ex_craft_add_recipe.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "bd2f66db-6f74-4126-a3b1-6eff0356411c",
-            "Value": {
-                "id": "db1f4e5a-e2b0-45df-b889-a56bffa4542e",
-                "resourcePath": "datafiles_yy\\ex\\weapons.csv.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "bd4e4f6d-e144-4666-a50c-eb8dbabe95b0",
             "Value": {
                 "id": "c03296d0-60b3-448c-8d72-e3524407c0ed",
@@ -1508,6 +1428,22 @@
                 "id": "1bc55efd-a5f8-40d2-b465-cb48d4f229d6",
                 "resourcePath": "scripts\\ex_ev_subscribe\\ex_ev_subscribe.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c18be36f-00eb-4b67-ab51-0015cad18376",
+            "Value": {
+                "id": "6bb71cc1-5ea8-497f-bce6-cc60cc5c4a3e",
+                "resourcePath": "datafiles_yy\\ex\\foods.csv.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "c4b1cf57-08a3-4d26-ac46-74664e26049d",
+            "Value": {
+                "id": "8fddeb9c-856d-4ee7-b171-1c5e76ae0fda",
+                "resourcePath": "datafiles_yy\\ex\\weapons.csv.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1564,6 +1500,14 @@
                 "id": "cec50c76-cc51-4ac9-9fa0-fa6e0ee3ab8c",
                 "resourcePath": "sprites\\s_house\\s_house.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ca128e82-0b1b-4021-9543-70e1e84db870",
+            "Value": {
+                "id": "3a11e2b2-37ac-4d10-a1c7-145e801fd0c8",
+                "resourcePath": "datafiles_yy\\ex\\potions.csv.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1727,6 +1671,14 @@
             }
         },
         {
+            "Key": "de6a461b-d032-4e50-9f7d-1cbe5206494a",
+            "Value": {
+                "id": "61f2826c-bbda-4f7d-b981-b29771f79830",
+                "resourcePath": "datafiles_yy\\ex\\armors.csv.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "deac3b2b-f9e8-46e8-81c7-3984b2f1c331",
             "Value": {
                 "id": "7791b948-4747-4240-af40-c5288ac554f7",
@@ -1756,6 +1708,14 @@
                 "id": "1362494e-6f67-4db9-8454-ba21c5c6b348",
                 "resourcePath": "views\\e3105016-2f28-4647-bb07-a39f51c68048.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e5226e8c-453d-4f55-8b3e-39cd643c07a9",
+            "Value": {
+                "id": "ff981b17-0e30-4177-8514-e5a6d7068463",
+                "resourcePath": "objects\\o_power_bar\\o_power_bar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1900,14 +1860,6 @@
                 "id": "0e8fe7ed-b395-42c9-acf5-082ed9537376",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
-            }
-        },
-        {
-            "Key": "f5666679-e5e7-4612-94d7-4321c8e66bb9",
-            "Value": {
-                "id": "ffeff85f-00db-437c-afcf-4d50ccabd9a7",
-                "resourcePath": "datafiles_yy\\ex\\armors.csv.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -2126,11 +2078,7 @@
         "94f5abd6-9145-4880-bf84-0ca861c8558e",
         "ba49b51e-517a-4864-888d-d4eb760b5af4",
         "b9573fa1-0e9d-4ed1-abbc-4acdbef3a224",
-        "4aff0ac5-867a-4ece-9c04-ea86f3363494",
-        "baeefc15-5eea-4fc7-ba87-8aed88bebdbf",
-        "56fc5171-f110-4eac-b237-55fabe21ec46",
-        "4ddfe38a-8139-4fd4-a740-a61b385ee7eb",
-        "af592ec8-21f3-4eee-accb-1eb02ccb7990"
+        "4aff0ac5-867a-4ece-9c04-ea86f3363494"
     ],
     "tutorial": ""
 }

@@ -17,14 +17,14 @@ var bait = instance_create_layer(x + 1 , y - sprite_yoffset ,"Instances", o_bait
 bait.fisher_x = x;
 bait.fisher_y = y;
 
-switch(sprite)
+switch(sprite_index)
 	{
 		
-	case s_player_down : bait.direction = 270;
+	case s_player_fishing : bait.direction = 270;
 	break;
-	case s_player_up : bait.direction = 90;
+	case s_player_fishing_up : bait.direction = 90;
 	break;
-	case s_player_right : 
+	case s_player_fishing_right : 
 	if (image_xscale == -1) bait.direction = 180;
 	else bait.direction = 0;
 	break; 

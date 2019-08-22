@@ -10,6 +10,7 @@ ex_db_load("ex/fish.csv");
 //Inventory system
 
 global.inventory = ex_inv_create(10);
+global.inv_mouse = ex_inv_create(1);
 
 // Fish DataBase per location
 #macro Sea 0

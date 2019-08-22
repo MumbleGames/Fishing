@@ -1,5 +1,4 @@
 ///@desc handle mouse events
-
 if(slot_current == noone) { exit; }
 
 //if currently hovering a slot, check for mouse events
@@ -13,3 +12,4 @@ with(slot_current) {
 	}
 	
 }
+depth = obj_inv_panel_backpack.depth - 1;

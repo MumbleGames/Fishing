@@ -18,11 +18,7 @@ switch (state)
 	image_index = 0;
 	image_speed = 0;
 	if ( right or left or up or down) state = player.moving;
-	if (is_facing(o_fishing_location) and fishing_button) 
-	{
-		sprite = sprite_index;
-		state = player.rod_out;
-	}
+	if (is_facing(o_fishing_location) and fishing_button) state = player.rod_out;
 	break;
 #endregion
 #region Moving State
@@ -48,30 +44,44 @@ switch (state)
 #region Rod Out State
 	case player.rod_out :	
 		
-		switch(sprite)
+		switch(sprite_index)
 		{
 			case s_player_down : sprite_index = s_player_fishing;
+			pow_bar = instance_create_layer(x, y -35, "Player", o_power_bar);
 			break;
 			case s_player_right : 
 			var sens = image_xscale;
 			sprite_index = s_player_fishing_right;
 			image_xscale = sens;
+			pow_bar = instance_create_layer(x, y+8, "Player", o_power_bar);
 			break;
 			case s_player_up : sprite_index = s_player_fishing_up;
+			pow_bar = instance_create_layer(x, y+8, "Player", o_power_bar);
 			break;
 		}
-		image_index = 0;
+		
 		//Take Rod Back
 			if(echap)
-		{ 
-			sprite_index = sprite;
+		{
+			switch(sprite_index)
+			{
+				case s_player_fishing : sprite_index = s_player_down; break;
+				case s_player_fishing_right : 
+				var sens = image_xscale;
+				sprite_index = s_player_right;
+				image_xscale = sens;
+				break;
+				case s_player_fishing_up : sprite_index = s_player_up;
+				break;
+			}
 			state = player.idle;	
+			instance_destroy(pow_bar);
 		}
 		
 		//Throwing the line
 		if(fishing_button) 
 		{
-			bait = throw_bait(15,4);
+			bait = throw_bait(15,2 + pow_bar.image_index);
 			state = player.throwing;
 		}
 		break;
@@ -89,13 +99,13 @@ case player.throwing :
 			alarm[1] = fishing_time; 
 		}
 		else 
-		{ 			
+		{ 	
 			if(echap)
 			{ 
-			sprite_index = sprite;
 			state = player.rod_out;	
 			instance_destroy(bait);
 			instance_destroy(o_dialog_box);
+			instance_destroy(pow_bar);
 			}
 				
 		}
@@ -110,7 +120,6 @@ case player.waiting :
 		{
 			
 			instance_destroy(bait);
-			sprite_index = s_player_fishing;
 			state = player.rod_out;	
 			var notice_box_there = instance_exists(o_dialog_box);
 			if(notice_box_there) instance_destroy(instance_find(o_dialog_box,0));
